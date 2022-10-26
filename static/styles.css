@@ -1,0 +1,14 @@
+/* colors */
+:root{
+    --mainbackground: #F5EFE6;
+    --secondcolor: #DFD3C3;
+    --thirdcolor: #D0B8A8;
+    --fourthcolor: #7D6E83;
+}
+
+body {
+    background-color: #F5EFE6;
+}
+nav.nav {
+    background-color: var(--thirdcolor);
+}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for data in bettingData %}
+    <p>{{ data }}</p>
+
+{% endfor %}
+    <table id="data" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Home</th>
+                <th>Away</th>
+                <th>Spread</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in response %}
+                <tr>
+                    <td> {{data['home_team']}} </td>
+                    <td> {{data['away_team']}} </td>
+                    
+                  
+                    {% for item in data['bookmakers'][3]['markets'] %}
+                        <td>
+                            {{item['outcomes'][0]['point']}}
+                        </td>
+                    
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}
