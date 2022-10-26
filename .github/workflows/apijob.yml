@@ -1,0 +1,19 @@
+name: api-job
+
+on:
+  schedule:
+  - cron: '0 8 * * THU'
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v2
+      - uses: actions/setup-python@vs
+        with:
+          python-version: 3.x
+      - name: Get Api Data
+        env:
+          LSO_API_KEY: ${{ secrets.LSO_API_KEY }}
+        run: python create_database_entries.py
