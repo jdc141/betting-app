@@ -29,6 +29,11 @@ def apiGrabber(url):
         "bookmakers": "draftkings"
     }
 
+    headers = {
+	"X-RapidAPI-Key": key,
+	"X-RapidAPI-Host": "odds.p.rapidapi.com"
+    }
+
     
 
     response = requests.request(

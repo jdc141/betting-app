@@ -34,19 +34,7 @@ class Odds(db.Model):
 @app.route("/")
 def home():
 
-    url = "https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/odds"
-
-    querystring = {"regions":"us","oddsFormat":"american","markets":"spreads,totals","dateFormat":"iso"}
-
-    headers = {
-	"X-RapidAPI-Key": "LSO_API_KEY",
-	"X-RapidAPI-Host": "odds.p.rapidapi.com"
-    }
-
-    response = requests.request("GET", url, headers=headers, params=querystring)
-    json_response = response.json()
-
-    return render_template("index.html", response=json_response)
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port="81")
