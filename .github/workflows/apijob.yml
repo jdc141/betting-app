@@ -16,4 +16,4 @@ jobs:
       - name: Get Api Data
         env:
           LSO_API_KEY: ${{ secrets.LSO_API_KEY }}
-        run: python betting-app/.github/workflows/create_database_entries.py
+        run: python create_database_entries.py
