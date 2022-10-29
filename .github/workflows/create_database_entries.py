@@ -6,7 +6,7 @@ def main():
     json_obj = apiGrabber(
         "https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/odds")
     
-    teamNames(json_obj)
+    print(teamNames(json_obj))
 
 
     
