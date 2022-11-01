@@ -12,14 +12,12 @@
             </tr>
         </thead>
         <tbody>
-            {% for team in teams %}
+            {% for row in rows %}
             <tr>
-                <td>{{ team.name }}</td>
+                <td>{{ row["name"] }}</td>
             </tr>
             {% endfor %}
             
-            
-
         </tbody>
     </table>
 {% endblock content %}
