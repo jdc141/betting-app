@@ -1,0 +1,43 @@
+// {
+//     'id': '075dbff0219a3a1100c513400c4796ef', 
+//     'sport_key': 'americanfootball_nfl', 
+//     'sport_title': 'NFL',
+//     'commence_time': '2022-11-04T00:15:00Z', 
+//     'home_team': 'Houston Texans', 
+//     'away_team': 'Philadelphia Eagles', 
+
+//     'bookmakers': 
+//     [
+//         {'key': 'draftkings', 
+//         'title': 'DraftKings', 
+//         'last_update': '2022-11-01T23:09:46Z', 
+//         'markets': 
+//         [
+//             {'key': 'spreads', 
+
+//             'outcomes': 
+//                 [
+//                     {'name': 'Houston Texans', 
+//                     'price': -115, 
+//                     'point': 14.0}, 
+//                     {'name': 'Philadelphia Eagles', 
+//                     'price': -105, 
+//                     'point': -14.0}
+//                 ]
+//             },
+//                  {'key': 'totals',
+
+//                  'outcomes': 
+//                     [
+//                         {'name': 'Over', 
+//                         'price': -110, 
+//                         'point': 45.0}, 
+//                         {'name': 'Under', 
+//                         'price': -110,
+//                          'point': 45.0}
+//                     ]
+//                 }
+//         ]
+//         }
+//     ]
+// }
